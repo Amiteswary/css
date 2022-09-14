@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS LAB 3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style type="text/css">
+		body{
+			font-family: 'Roboto', sans-serif;
+			color:#586cc7;
+			margin-left: 20px;
+			margin-top: 35px;
+		}	
+        table, th, td{
+        	margin-top: 60px;
+             border:solid 1px;
+             border-collapse: collapse;
+             padding-top: 5px;
+             padding-left: 30px;
+             padding-bottom: 20px;
+             text-align: justify;
+        }      
+       .material-icons{
+        	padding-right: 7px;
+        }
+        
+        .pagination{
+        	display: inline;
+        	float: right;
+        	padding-right: 55px;
+        	text-decoration: none;
+
+        }
+
+        p{
+        	display: inline;
+        	float: left;
+    	}
+    	
+    	a{
+    		padding-right: 50px;
+    	}
+</style>
+</head>
+<body>
+    <div style="float: left; padding-right: 350px;">		
+        <label for="no" style="">Show </label><!--show entries-->
+        <select id="no" name="no" >
+	         <option value="1">1</option>
+	         <option value="2">2</option>
+	         <option value="3">3</option>
+	         <option value="4">4</option>
+	         <option value="5" selected>5</option>entries
+        </select>
+        <label for="no">entries</label>
+    </div>
+	    <label style="font-size: 30px; margin: 100px;">Customer <b>Details</b> </label><!--heading-->
+	     <label style="float:right;padding-right:120px;">Search...</label><!--search-->
+	     <i class="material-icons" style="float: right;">search</i>
+    <table>
+    	<tr>
+    		<th style="width: 20px"> # </th>
+    		<th style="width: 350px" > Name <i class="material-icons">unfold_more</i></th>
+    		<th style="width: 250px" > Address </th>
+    		<th style="width: 140px"> City <i class="material-icons">unfold_more</i></th>
+    		<th style="width: 120px"> Pin Code </th>
+    		<th style="width: 150px" > Country <i class="material-icons">unfold_more</i></th>
+    		<th style="width: 150px" > Actions </th>
+    	</tr>
+    	<tr>
+    		<td>1</td>
+    		<td>Thomas Hardy</td>
+    		<td>89, Chiaroscous Rd.</td>    	
+    		<td>Portland</td>
+    		<td>97219</td>
+    		<td>USA</td>
+    		<td>
+    			<i class="material-icons" style="color:#34b1eb ">visibility </i>
+    			<i class="material-icons" style="color:#fcdb03 ">mode </i>
+    			<i class="material-icons" style="color: #fc0303">delete </i>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>2</td>
+    		<td>Maria Anders</td>
+    		<td>Obere Str. 57</td>    	
+    		<td>Berlin</td>
+    		<td>12209</td>
+    		<td>Germany</td>
+    		<td>
+    			<i class="material-icons" style="color:#34b1eb">visibility </i>
+    			<i class="material-icons" style="color:#fcdb03">mode </i>
+    			<i class="material-icons" style="color:#fc0303">delete </i>
+
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>3</td>
+    		<td>Fran Wilson</td>
+    		<td>C/ Araquil 67</td>    	
+    		<td>Madrin</td>
+    		<td>28023</td>
+    		<td>Spain</td>
+    		<td>
+    			<i class="material-icons"style="color:#34b1eb ">visibility </i>
+    			<i class="material-icons" style="color:#fcdb03">mode </i>
+    			<i class="material-icons" style="color: #fc0303" >delete </i>
+
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>4</td>
+    		<td>Dominique Perrier</td>
+    		<td>25 rue Lauriston</td>    	
+    		<td>Paris</td>
+    		<td>75016</td>
+    		<td>France</td>
+    		<td>
+    			<i class="material-icons"style="color:#34b1eb ">visibility </i>
+    			<i class="material-icons" style="color:#fcdb03">mode </i>
+    			<i class="material-icons"style="color: #fc0303" >delete </i>
+
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>5</td>
+    		<td>Marthin Blank</td>
+    		<td>Via Monte Bianco 34</td>    	
+    		<td>Turin</td>
+    		<td>10100</td>
+    		<td>Italy</td>
+    		<td>
+    			<i class="material-icons" style="color:#34b1eb">visibility </i>
+    			<i class="material-icons" style="color:#fcdb03">mode </i>
+    			<i class="material-icons" style="color: #fc0303">delete </i>
+    		</td>
+    	</tr>
+    </table>
+    <div  style="padding-top: 30px;">
+    	<p style="">show <b>5 </b>out of<b> 25 </b> entries</p>
+    	<div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#" style="display: inline-block; border-radius: 50%; width: 15px;height: 15px; padding: 8px; background:#34b1eb; text-align: center;">3</a>
+            <a href="#" style="padding-left:50px;">Next</a>
+    	</div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+		body{
+			background-color:#ebf2ec ;
+			margin-left: 400px;
+			margin-top: 75px;
+
+
+		}
+		.box{
+			background-color: white;
+			width: 600px;
+			border-radius: 10px;
+			padding-left: 35px;
+			padding-right: 55px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		a{
+			text-decoration: none;
+		}
+	
