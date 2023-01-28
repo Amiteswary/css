@@ -1,94 +1,149 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab CSS 5</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>CssLab5</title>
 	<style type="text/css">
-		body {
-             height: 100%;
-             background: linear-gradient(90deg,#023d3d 60%,  #00b36b 40%);
-             color:white;
-
-             }
-		c
-		i{
-			padding: 15px;
-		   }
-		
-		.Register{
-
-			text-align: justify;
-			border-radius: 10px;
-			background-color: #00b36b;
-			padding: 15px;
-			color: white;
-			padding-left: 20px;
-			padding-right: 20px;
-			font-size: 15px;
-			margin-top: 50px;		}
-		
-		.navigation{
-			margin-top: 500px;
-		
-
+		body{
+			margin: 0;
+			padding: 0;
+			background: linear-gradient(to right,#1B2430 0%,#1B2430 55%,#14C38E 55%,#14C38E 100%);
+			font-family: 'Roboto Condensed', sans-serif;
 		}
-
-		.bluePart{
-		   margin-right: 750px;
-		   margin-left: 50px;
+		.topbar{
+			height: 30px;
+			background-color: #E8E2E2;			
 		}
-		
-		li{
-			display: inline;
-			padding-right: 40px;
+		.dot {
+  			height: 20px;
+  			width: 20px;
+  			border-radius: 50%;
+			margin: 5px;
+  			display: inline-block;			
 		}
-		input[type=text] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
-}
+		.red{
+			background-color: #DB4437;			
+		}
+		.yellow{
+			background-color: #F4B400;			
+		}
+		.green{
+			background-color: #0F9D58;		
+		}
+		.text{
+			margin:3% 3% ;
+			word-wrap: break-word;
+			display: inline-block;
+			color:#D8D8D8;
+			height: auto;
+		}
+		img{
+		height: 50px;
+		width: 150px;
+		}
+		.right{
+		   float: left; 
+		   width: 50%;
+		}
+		.title{
+			margin-top: 20%;
+			font-size: 25px;
+			padding-bottom: 0;
+			font-weight: lighter;			
+		}
+		.left{
+			float:right;
+			margin-right:5% ;
+		}
+		.para p{
+			word-wrap: break-word;
+			padding-bottom:10%;
+		}
+		hr{
+			width: 60%;
+			margin:0;
+		}
+		.buttonRight{
+			background-color:#14C38E ;
+			color:white ;
+			padding:10px;
+			width: 30%;
+			text-align: center;
+			font-weight: bolder;
+			border-radius: 3px;
+		}
+		.buttonLeft{
+			background-color:white ;
+			color:#14C38E ;
+			padding:10px;
+			width: 30%;
+			text-align: center;
+			font-weight: bolder;
+			border-radius: 3px;
+		}
+		.footer{
+			margin:3%;
+			
+			color: white;			
+		}
+		.fcontent{
+			padding-right: 25px;
+		}
 
 	</style>
 </head>
 <body>
-	<div id="Top_bar" style="background-color: white; ">
-		<i class="material-icons" style="color:#db3236;background-color: white;">circle</i>
-		<i class="material-icons" style="color:#f4c20d;background-color: white;">circle</i>
-		<i class="material-icons" style="color:#3cba54; background-color:white;">circle</i>
+	<div class="topbar">
+		<span class="dot red"></span>
+		<span class="dot yellow"></span>
+		<span class="dot green"></span>
 	</div>
-	<div id="bluePage" style="margin-left: 100px;">	*	<h1 style="margin-top: 50px;margin-bottom: 50px;">Welcome</h1>
-		<h3>Register for an ERC account here</h3>
-		<p class="bluePart">Register for a free ERC account in here and get access to the webpage, academy and My ERC menbership portal. Tempor incididunt ut laboris ullamco et dolore magna aliquua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alliquip ex ea cinsequat. Duis aute inure solor in reprehenderit in voluptate velit esse cilium dolore eu fugiat nulla pariature. Excepture aint occaecat cupidatat non proident, sunt in culpa aui.   
-		</p>
+	<div class="text">
+		<div class="right">
+			<div class="logo">
+				<img src="logo-white.png" alt="logo">
+			</div>
+			<div class="title">
+				<h1>Welcome</h1>
+				<h3>Register for an ERC account here</h3>
+			</div>
+			<div class="para">
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+			</div>
+			<div class="buttonRight">REGISTER HERE</div>	
+		</div>
 
+		<div class="left">
+			<div class="title">				
+				<h3 style="margin-top: 76%;">Register for an ERC account here</h3>
+			</div>
+			<div style="margin-bottom:0;">Your email</div><br>
+			<hr><br>
+			<div style="margin-bottom:0;">Password</div><br>
+			<hr><br><br>
+			<div class="buttonLeft">LOGIN</div> Forget Password
+		</div>
+	</div>
 
-		<button class="Register">Register Here</button>
-    </div
-    <div id="greenPart">
-    	<h2>Or login to your account</h2>
-    	<input type="text" name="email" placeholder="Your email">
-    	<input type="text" name="password" placeholder="Your password">
-    	<button type="button">Login</button>
-    	<a href="#">Forgot Password</a>
-
-
-
-    </div>
-		<ul class="navigation">
-			<li>CHOOSE LANGUAGE</li>
-			<li> HELP CENTER</li>
-			<li>ERC WEBSITE</li>
-			<li>ERC WEBSHOP</li>
-		</ul>	
-
-
-		
 	
+	<div class="footer">
+		<span class="fcontent" style="margin-left:0;">CHOOSE LANGUAGE<span class="material-symbols-outlined">
+			expand_more
+		</span></span>
 		
+		<span class="fcontent">HELP CENTER</span>
+		<span class="fcontent">ERC WEBSITE</span>
+		<span class="fcontent">ERC WEBSHOP</span>
+	</div>
+	
+	
+	
+	
 
- 
-    
 </body>
 </html>
